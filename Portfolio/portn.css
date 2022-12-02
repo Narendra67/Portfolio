@@ -1,0 +1,248 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-family: Rockwell, "Times New Roman", serif;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    background: #15d604;
+    transition: .5s;
+
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    /* line-height: 80px; */
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 20px;
+        padding-left: 30px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    /* a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    } */
+
+    #check:checked~ul {
+        background: none;
+        color: #0082e6;
+        left: 0;
+
+    }
+}
+
+section {
+    background: url('mount.jpg.jpg') no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+.name {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: absolute;
+
+}
+
+.container {
+    display: flex;
+    background: calc('dd.jpg') no-repeat;
+    background-size: cover;
+    height: calc(45vh - 39px);
+    background-color: rgb(9, 170, 170);
+    /* shape-outside: margin-box; */
+}
+
+.card {
+    padding: 10px 15px;
+    margin: 20px;
+    border: 2px solid rgb(140, 252, 233);
+    background-color: rgb(250, 214, 167);
+    box-shadow: 7px 5px 10px;
+    background: calc('dd.jpg.jpg') no-repeat;
+    background-size: cover;
+    cursor: text;
+    align-items: baseline;
+    justify-content: center;
+    text-overflow: initial;
+    box-shadow: -0px -1px 20px red;
+    clear: left;
+}
+
+.card h1 {
+    /* text-shadow: 13px 12px red; */
+    text-shadow: 3px 2px 2px rgb(252, 249, 249);
+}
+
+#nkpic {
+    width: 100px;
+    display: inline-block;
+    transform: translate(0%, 8%);
+    background-image: calc('nk.jpg.jpg');
+    /* background-image: url('https://yt3.ggpht.com/ytc/AAUvwnh7CHDDIuu6a87VwcIoDe-UeDb-Cfu8Ig8utAcGBDw=s900-c-k-c0x00ffffff-no-rj'); */
+    border-radius: 60%;
+
+}
+
+.card p {
+    display: flex;
+    text-align: justify;
+}
+
+#card1 {
+    width: 33.33%;
+}
+
+#card2 {
+    width: 33.33%;
+}
+
+#card3 {
+    width: 33.33%;
+}
+
+.footer {
+    height: 150px;
+    width: 216vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 40px;
+    background-color: black;
+    display: block;
+    /* box-shadow: opx -30px -30px; */
+}
+
+.Social_links {
+    list-style: none;
+    margin: 1rem 0 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Social_links li {
+    margin: 0 10px;
+}
+
+.Social_links a {
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+.Social_links a:hover i {
+    color: aqua;
+}
+
+.Copyright_info {
+    color: bisque;
+    display: block;
+    size: 15px;
+    bottom: 50%;
+    margin-top: -40px;
+    align-items: center;
+    text-align: center;
+}
+.dark-theme-switcher{
+background-color: transparent;
+border: none;
+color: #ccc;
+cursor: pointer;
+padding: 12px;
+background-image: url(/static/images/dark-mode.svg);
+background-repeat: no-repeat;
+}
